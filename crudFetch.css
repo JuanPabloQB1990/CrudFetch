@@ -1,0 +1,120 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    background-image: url("../img/fondo-contact.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+    
+}
+
+#container11{
+    display: flex;
+    justify-content: space-around;
+    height: 100vh;
+    position: relative;
+    padding:2rem;
+}
+
+#container11 h2{
+    text-align: center;
+}
+
+.container-tabla-api{
+    height: auto;
+    width: 75%;
+    text-align: center;
+    margin: 1rem auto;
+}
+
+#container11 input[type="submit"]{
+    font-size: 15px;
+    padding: 5px 15px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .5s;
+}
+
+#container11 input[type="submit"]:hover{
+    background-color: black;
+    border: 2px solid white;
+    color: white;
+    top: -5px;
+    left: -5px;
+}
+
+.crud-table{
+    border: 3px solid white;
+    border-collapse: collapse;
+    margin: auto;
+}
+
+.crud-table tr th,td {
+    border: 3px solid var(--color-Border-Divs);
+    padding: 3px 25px;
+}
+
+.crud-form input{
+    margin-top: 2rem;
+}
+
+#ordenar,#position{
+    padding: 2px 5px;
+    font: 1rem;
+}
+
+* input {
+    padding: 5px;
+    border: none;
+    font-size: 16px;
+    outline: none;
+    font-weight: 700;
+}
+
+* button{
+    font-size: 15px;
+    padding: 5px 15px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .5s;
+}
+
+* button:hover{
+    background-color: black;
+    border: 2px solid white;
+    color: var(--colorText-Button);
+    top: -5px;
+    left: -5px;
+}
+
+@media (max-width: 415px) {
+    
+    #container11{
+        position:relative;
+        
+    }
+
+    #container11 a {
+        position:absolute;
+        bottom:7%;
+    }
+
+    .crud-form, .container-tabla-api {
+        position:absolute;
+    }
+
+    .container-tabla-api {
+        bottom: 20%;
+    }
+}

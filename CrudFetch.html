@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="crudFetch.css">
+    <title>Crud con API Fetch</title>
+</head>
+<body>
+    <section class="container" id="container11">
+        <article>
+            <h2>CRUD con API FETCH</h2>
+            <h2 class="crud-title">Agregar Usuario</h2>
+            <form class="crud-form">
+                <label for="nombreCrud">Nombre:</label>
+                <input id="nombreCrud" type="text" name="nombre" placeholder="nombre" required >
+                <br>
+                <label for="apellidoCrud">Apellido:</label>
+                <input id="apellidoCrud" type="text" name="apellido" placeholder="apellido" required>
+                <br>
+                <label for="edadCrud">Edad:</label>
+                <input id="edadCrud" type="number" name="edad" placeholder="edad" required>
+                <br>
+                <input type="submit" value="Enviar">
+                <input type="hidden" name="id">
+            </form>
+            
+        </article>
+        <article class="container-tabla-api">
+            <h2>Datos</h2>
+            <table class="crud-table">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Apellido</th>
+                        <th>Edad</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </article>
+    </section>
+    <template id="crud-template">
+        <tr>
+            <td class="nombre"></td>
+            <td class="apellido"></td>
+            <td class="edad"></td>
+            <td>
+                <button class="edit">Editar</button>
+                <button class="delete">Eliminar</button>
+            </td>
+        </tr>
+    </template>
+    </div>
+    <script src="./crudFetch.js"></script>
+</body>
+</html>
+
